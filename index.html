@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="极简导航 - 游戏与日常生活导航">
+    <title>极简导航 - 游戏与生活</title>
+    
+    <!-- 使用相对路径引用CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 引入Font Awesome图标库 (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- ==================== 页面头部 ==================== -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-compass"></i> 极简导航
+            </h1>
+            <p class="tagline">发现精彩，从这里开始</p>
+        </div>
+    </header>
+    
+    <!-- ==================== 点赞功能区域 ==================== -->
+    <section class="like-section">
+        <div class="container">
+            <button id="likeBtn" class="like-btn" title="点赞">
+                <i class="fas fa-heart"></i>
+                <span id="likeCount">0</span>
+            </button>
+            <p class="like-text">觉得不错？点个赞吧！</p>
+        </div>
+    </section>
+    
+    <!-- ==================== 游戏导航栏 ==================== -->
+    <section class="nav-section" id="game-nav">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-gamepad"></i> 游戏导航
+            </h2>
+            <div class="nav-grid">
+                <!-- 网页游戏 -->
+                <div class="nav-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-globe"></i> 网页游戏
+                    </h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.crazygames.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Crazy Games
+                        </a></li>
+                        <li><a href="https://www.poki.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Poki Games
+                        </a></li>
+                        <li><a href="https://www.addictinggames.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Addicting Games
+                        </a></li>
+                        <li><a href="https://www.miniclip.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Miniclip
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- 云游戏平台 -->
+                <div class="nav-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-cloud"></i> 云游戏平台
+                    </h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.xbox.com/cloud-gaming" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Xbox Cloud Gaming
+                        </a></li>
+                        <li><a href="https://www.nvidia.com/geforce-now" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> GeForce NOW
+                        </a></li>
+                        <li><a href="https://www.playstation.com/remote-play" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> PlayStation Remote
+                        </a></li>
+                        <li><a href="https://www.amazon.com/luna" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Amazon Luna
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- 热门游戏 -->
+                <div class="nav-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-fire"></i> 热门游戏
+                    </h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.minecraft.net" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Minecraft
+                        </a></li>
+                        <li><a href="https://www.fortnite.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Fortnite
+                        </a></li>
+                        <li><a href="https://www.leagueoflegends.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> League of Legends
+                        </a></li>
+                        <li><a href="https://www.valorant.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Valorant
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== 日常生活导航栏 ==================== -->
+    <section class="nav-section alt-bg" id="life-nav">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-home"></i> 日常生活导航
+            </h2>
+            <div class="nav-grid">
+                <!-- 搜索引擎 -->
+                <div class="nav-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-search"></i> 搜索引擎
+                    </h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.google.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Google
+                        </a></li>
+                        <li><a href="https://www.bing.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Bing
+                        </a></li>
+                        <li><a href="https://www.baidu.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> 百度
+                        </a></li>
+                        <li><a href="https://duckduckgo.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> DuckDuckGo
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- 社交媒体 -->
+                <div class="nav-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-users"></i> 社交媒体
+                    </h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.twitter.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Twitter/X
+                        </a></li>
+                        <li><a href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Facebook
+                        </a></li>
+                        <li><a href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Instagram
+                        </a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> LinkedIn
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- 实用工具 -->
+                <div class="nav-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-tools"></i> 实用工具
+                    </h3>
+                    <ul class="link-list">
+                        <li><a href="https://translate.google.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Google翻译
+                        </a></li>
+                        <li><a href="https://www.weather.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> 天气预报
+                        </a></li>
+                        <li><a href="https://www.google.com/maps" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Google地图
+                        </a></li>
+                        <li><a href="https://www.calculator.net" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> 在线计算器
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- 学习资源 -->
+                <div class="nav-card">
+                    <h3 class="card-title">
+                        <i class="fas fa-graduation-cap"></i> 学习资源
+                    </h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.wikipedia.org" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Wikipedia
+                        </a></li>
+                        <li><a href="https://www.coursera.org" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Coursera
+                        </a></li>
+                        <li><a href="https://www.khanacademy.org" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> Khan Academy
+                        </a></li>
+                        <li><a href="https://github.com" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> GitHub
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== 分享功能区域 ==================== -->
+    <section class="share-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-share-alt"></i> 分享本站
+            </h2>
+            <p class="share-desc">将本站分享给好友</p>
+            <div class="share-buttons">
+                <!-- 分享到Twitter -->
+                <button class="share-btn twitter" onclick="shareTo('twitter')" title="分享到 Twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </button>
+                <!-- 分享到Facebook -->
+                <button class="share-btn facebook" onclick="shareTo('facebook')" title="分享到 Facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </button>
+                <!-- 分享到微信 (复制链接) -->
+                <button class="share-btn wechat" onclick="copyLink()" title="复制链接">
+                    <i class="fab fa-weixin"></i> 复制链接
+                </button>
+                <!-- 邮件分享 -->
+                <button class="share-btn email" onclick="shareTo('email')" title="邮件分享">
+                    <i class="fas fa-envelope"></i> 邮件
+                </button>
+            </div>
+            <p id="copyMessage" class="copy-message"></p>
+        </div>
+    </section>
+    
+    <!-- ==================== 访客留言板块 ==================== -->
+    <section class="guestbook-section" id="guestbook">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-comment-dots"></i> 访客留言
+            </h2>
+            <p class="guestbook-desc">欢迎留下您的宝贵意见和建议</p>
+            
+            <!-- 留言表单 -->
+            <!-- 
+                使用 Formspree 服务处理表单提交
+                说明：需要在 https://formspree.io 注册并替换下面的 action URL
+                提交后会自动发送到指定邮箱，并支持持久化存储
+            -->
+            <form 
+                id="guestbookForm" 
+                action="https://formspree.io/f/YOUR_FORM_ID" 
+                method="POST"
+                class="guestbook-form"
+            >
+                <!-- 姓名输入 -->
+                <div class="form-group">
+                    <label for="name">
+                        <i class="fas fa-user"></i> 您的姓名
+                    </label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="请输入您的姓名" 
+                        required
+                    >
+                </div>
+                
+                <!-- 邮箱输入 -->
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> 电子邮箱
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="请输入您的邮箱" 
+                        required
+                    >
+                </div>
+                
+                <!-- 留言内容 -->
+                <div class="form-group">
+                    <label for="message">
+                        <i class="fas fa-pen"></i> 留言内容
+                    </label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        placeholder="请输入您的留言..." 
+                        required
+                    ></textarea>
+                </div>
+                
+                <!-- 提交按钮 -->
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> 提交留言
+                </button>
+            </form>
+            
+            <!-- 提交成功提示 -->
+            <div id="formSuccess" class="form-success" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <p>留言提交成功！感谢您的反馈。</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== 页面底部 ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 极简导航. All rights reserved.</p>
+            <p class="footer-note">Made with <i class="fas fa-heart"></i> for simplicity</p>
+        </div>
+    </footer>
+    
+    <!-- 引入JS文件 (使用相对路径) -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
